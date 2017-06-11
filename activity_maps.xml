@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.final_exam.MapsActivity"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:id="@+id/btnShowLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:drawableTop="@drawable/a1"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="99dp" />
+
+    <Button
+        android:id="@+id/btnclearLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:drawableTop="@drawable/a2"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/btnShowLocation" />
+
+
+
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:editable="false"
+        android:textSize="10dp"
+        android:text="log print here\n"
+        android:layout_below="@+id/btnclearLocation" />
+
+</RelativeLayout>
